@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Evaluating CPU feasibility of the optimization loop",
+      "prompt": "Given the strict CPU-only constraints of my exam, is the alternating optimization approach for Multiple Kernel Learning (updating SVM alphas, then kernel weights) feasible to run from scratch in Python for a toy dataset of 500 rows?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that by using precomputed kernel matrices, the alternating optimization loop bypasses heavy computation and runs in milliseconds on a standard CPU.",
+      "student_verification": "Cross-referenced the time complexity section of the paper to ensure the wrapper method does not scale exponentially with toy-sized datasets.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Understanding algorithmic trade-offs",
+      "prompt": "In Multiple Kernel Learning (MKL), what is the computational and performance trade-off between using an L1-norm versus an L2-norm constraint on the kernel weights during the alternating optimization process?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Clarified that an L1-norm forces sparsity (selecting only a few kernels and dropping the rest), while an L2-norm keeps all kernels active but prevents any single kernel from dominating.",
+      "student_verification": "Verified the mathematical definitions of L1 and L2 regularization impacts on weight vectors in standard machine learning literature.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Identifying failure modes for Part C preparation",
+      "prompt": "What are the common failure modes or limitations of MKL when the provided base kernels are highly correlated or redundant on a simplified toy dataset?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Revealed that highly correlated kernels can cause the optimization to become unstable or arbitrarily split weights, adding unnecessary computational overhead without improving accuracy.",
+      "student_verification": "Checked the paper's experiments section where the authors discuss the effects of kernel redundancy on the final combined margin.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Validating the methodology against the syllabus rules",
+      "prompt": "Why does MKL often yield sparse kernel weights when optimized with an L1 penalty, and how does this act as a form of implicit feature selection for classical SVMs?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Explained that if different kernels are applied to different subsets of features, dropping a kernel's weight to zero essentially acts as automated feature selection, proving it's a profound methodological improvement over standard SVMs.",
+      "student_verification": "Reviewed the theoretical proofs in the paper showing the equivalence between L1-MKL and block-norm feature selection.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Ensuring no deep learning dependencies",
+      "prompt": "When building an MKL pipeline, how does the algorithm prevent overfitting when combining a large dictionary of complex non-linear kernels, and does it require backpropagation?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that overfitting is strictly controlled by the structural risk minimization (C parameter) of the SVM and the norm constraints on the weights, utilizing quadratic programming rather than neural network backpropagation.",
+      "student_verification": "Verified the optimization formulas in the paper rely entirely on convex optimization solvers, not gradient descent on loss landscapes.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "prompt": "In Multiple Kernel Learning (MKL), what is the computational and performance trade-off between using an L1-norm versus an L2-norm constraint on the kernel weights during the alternating optimization process?",
+      "why_important": "Directly tackles the 'trade-offs' grading criterion by exploring how different mathematical constraints alter both the speed and the sparsity of the resulting SVM model."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt": "What are the common failure modes or limitations of MKL when the provided base kernels are highly correlated or redundant on a simplified toy dataset?",
+      "why_important": "Addresses the 'failure modes' rubric. Understanding how redundant kernels destabilize the solver is critical for troubleshooting my code in Part B and defending it in Part C."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 4,
+      "prompt": "Why does MKL often yield sparse kernel weights when optimized with an L1 penalty, and how does this act as a form of implicit feature selection for classical SVMs?",
+      "why_important": "Demonstrates deep analytical intent (the 'why' criterion) by connecting the algorithmic behavior of the MKL optimization to practical outcomes like automated feature selection."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 1,
+      "prompt": "Given the strict CPU-only constraints of my exam, is the alternating optimization approach for Multiple Kernel Learning feasible to run from scratch in Python for a toy dataset of 500 rows?",
+      "why_important": "Crucial for passing the 'Compute Feasibility' mandate, confirming that the iterative wrapper method won't cause memory or CPU exhaustion on my personal laptop."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "When building an MKL pipeline, how does the algorithm prevent overfitting when combining a large dictionary of complex non-linear kernels, and does it require backpropagation?",
+      "why_important": "Guaranteed that the paper adheres to the strict classical Machine Learning guidelines by confirming it relies on convex optimization (Quadratic Programming) rather than forbidden neural network techniques."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}
