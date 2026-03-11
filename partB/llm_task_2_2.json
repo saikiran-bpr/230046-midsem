@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_2_2",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided kernel functions using vectorised numpy operations.",
+      "prompt": "Implement linear and RBF kernel matrix computation from scratch using numpy.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided kernel functions using vectorised numpy operations.",
+      "student_verification": "Verified correctness against sklearn.metrics.pairwise results.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided an optimisation loop using Nelder-Mead on the negative dual objective.",
+      "prompt": "Implement MKL kernel weight learning by maximising the SVM dual objective using scipy.optimize.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided an optimisation loop using Nelder-Mead on the negative dual objective.",
+      "student_verification": "Added simplex projection (abs + normalisation) and PSD regularisation (1e-8 * I) for stability.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Explained the precomputed kernel interface: pass K_train for fit, K_test for predict.",
+      "prompt": "How do I use SVC with kernel='precomputed' in scikit-learn for the combined kernel?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Explained the precomputed kernel interface: pass K_train for fit, K_test for predict.",
+      "student_verification": "Added test-time kernel computation between test points and training points.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Explored polynomial kernel implementation for the kernel dictionary.",
+      "prompt": "Implement a polynomial kernel matrix computation from scratch using numpy, with degree and coef0 as parameters.",
+      "how_it_helped": "Provided polynomial kernel function: K(x,y) = (gamma * x.y + coef0)^degree using vectorised numpy operations.",
+      "student_verification": "Validated output against sklearn's polynomial_kernel for degree=2 and degree=3."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Investigated convergence criteria for the MKL alternating optimisation.",
+      "prompt": "What convergence criterion should I use for the MKL alternating optimisation loop, and how many iterations are typically sufficient?",
+      "how_it_helped": "Suggested monitoring the change in kernel weights between iterations and stopping when the L2-norm of the weight difference falls below 1e-4, typically converging in 10-20 iterations.",
+      "student_verification": "Implemented the convergence check and observed convergence within 8 iterations on the toy dataset."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Implement linear and RBF kernel matrix computation from scratch using numpy.",
+      "why_important": "Provided kernel functions using vectorised numpy operations."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Implement MKL kernel weight learning by maximising the SVM dual objective using scipy.optimize.",
+      "why_important": "Provided an optimisation loop using Nelder-Mead on the negative dual objective."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How do I use SVC with kernel='precomputed' in scikit-learn for the combined kernel?",
+      "why_important": "Explained the precomputed kernel interface: pass K_train for fit, K_test for predict."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "Implement a polynomial kernel matrix computation from scratch using numpy, with degree and coef0 as parameters.",
+      "why_important": "Provided polynomial kernel function: K(x,y) = (gamma * x.y + coef0)^degree using vectorised numpy operations."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "What convergence criterion should I use for the MKL alternating optimisation loop, and how many iterations are typically sufficient?",
+      "why_important": "Suggested monitoring the change in kernel weights between iterations and stopping when the L2-norm of the weight difference falls below 1e-4, typically converging in 10-20 iterations."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_2_2.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}

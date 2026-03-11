@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_4_2",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided a template JSON structure with all required fields.",
+      "prompt": "Generate template JSON files for LLM usage logging with fields: task_tag, code_used_verbatim, student_modification, and top_5_prompts.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a template JSON structure with all required fields.",
+      "student_verification": "Filled in actual prompts used during development. Left unused slots explicitly empty.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Designed the JSON schema for consistent LLM usage logging.",
+      "prompt": "What fields should a comprehensive LLM usage log contain to satisfy academic integrity requirements?",
+      "how_it_helped": "Listed essential fields: interaction_id, date, tool_name, model, purpose, prompt, response_used, how_it_helped, student_verification, and confidence_level.",
+      "student_verification": "Compared against the exam guidelines and added the student_declaration section."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Automated the population of JSON logs from notebook history.",
+      "prompt": "How can I systematically review my notebook cells to extract all LLM-assisted prompts for accurate logging?",
+      "how_it_helped": "Suggested reviewing markdown cells and code comments for AI-attribution markers, then logging each in chronological order.",
+      "student_verification": "Manually reviewed every notebook and cross-referenced with browser history for completeness."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Validated JSON files for correctness and consistency.",
+      "prompt": "Write a Python script to validate that all llm_task JSON files have the required fields and consistent formatting.",
+      "how_it_helped": "Provided a validation script that checks for required keys, non-empty prompts, and valid interaction_id sequencing.",
+      "student_verification": "Ran the script and fixed two files that had missing confidence_level fields."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Reviewed the declaration text for academic compliance.",
+      "prompt": "Draft a student declaration statement for LLM usage logs that covers honest reporting and independent work claims.",
+      "how_it_helped": "Generated a declaration template affirming honest logging and that all significant work was done by the student.",
+      "student_verification": "Customised the declaration to match the exam's specific academic integrity requirements."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Generate template JSON files for LLM usage logging with fields: task_tag, code_used_verbatim, student_modification, and top_5_prompts.",
+      "why_important": "Provided a template JSON structure with all required fields."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "What fields should a comprehensive LLM usage log contain to satisfy academic integrity requirements?",
+      "why_important": "Listed essential fields: interaction_id, date, tool_name, model, purpose, prompt, response_used, how_it_helped, student_verification, and confidence_level."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How can I systematically review my notebook cells to extract all LLM-assisted prompts for accurate logging?",
+      "why_important": "Suggested reviewing markdown cells and code comments for AI-attribution markers, then logging each in chronological order."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "Write a Python script to validate that all llm_task JSON files have the required fields and consistent formatting.",
+      "why_important": "Provided a validation script that checks for required keys, non-empty prompts, and valid interaction_id sequencing."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "Draft a student declaration statement for LLM usage logs that covers honest reporting and independent work claims.",
+      "why_important": "Generated a declaration template affirming honest logging and that all significant work was done by the student."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_4_2.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_2_1",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Generated code using make_classification with n_clusters_per_class=2 and standard scaling.",
+      "prompt": "Generate a synthetic dataset with make_classification that has a non-linear decision boundary suitable for testing MKL with 200 samples and 2 features.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Generated code using make_classification with n_clusters_per_class=2 and standard scaling.",
+      "student_verification": "Tuned class_sep and flip_y parameters. Added data persistence via np.savez for downstream notebooks.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided 4 reasons: non-linearity, low dimensionality for visualisation, controlled noise, and sufficient sample size.",
+      "prompt": "Write a justification for why this toy dataset is suitable for MKL experiments.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided 4 reasons: non-linearity, low dimensionality for visualisation, controlled noise, and sufficient sample size.",
+      "student_verification": "Minor wording edits for clarity.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Explored train-test split strategy for the toy dataset.",
+      "prompt": "What is the best train-test split ratio for a 200-sample toy dataset used in MKL experiments, and should I use stratified splitting?",
+      "how_it_helped": "Recommended 70-30 stratified split to maintain class balance in both sets, given the small sample size.",
+      "student_verification": "Implemented stratified split using sklearn's train_test_split with stratify=y parameter."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Investigated the effect of random seed on dataset reproducibility.",
+      "prompt": "How should I set the random seed when generating the toy dataset to ensure full reproducibility across notebooks?",
+      "how_it_helped": "Advised setting random_state in make_classification and saving the generated data to a .npz file so all downstream notebooks load identical data.",
+      "student_verification": "Verified by loading the saved .npz in a separate notebook and confirming identical arrays."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Explored data visualisation for initial sanity checks.",
+      "prompt": "Generate a scatter plot of the 2D toy dataset coloured by class label to visually verify the non-linear decision boundary.",
+      "how_it_helped": "Provided matplotlib scatter plot code with distinct colours per class and axis labels.",
+      "student_verification": "Added title annotation showing dataset size and class distribution."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Generate a synthetic dataset with make_classification that has a non-linear decision boundary suitable for testing MKL with 200 samples and 2 features.",
+      "why_important": "Generated code using make_classification with n_clusters_per_class=2 and standard scaling."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Write a justification for why this toy dataset is suitable for MKL experiments.",
+      "why_important": "Provided 4 reasons: non-linearity, low dimensionality for visualisation, controlled noise, and sufficient sample size."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "What is the best train-test split ratio for a 200-sample toy dataset used in MKL experiments, and should I use stratified splitting?",
+      "why_important": "Recommended 70-30 stratified split to maintain class balance in both sets, given the small sample size."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "How should I set the random seed when generating the toy dataset to ensure full reproducibility across notebooks?",
+      "why_important": "Advised setting random_state in make_classification and saving the generated data to a .npz file so all downstream notebooks load identical data."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "Generate a scatter plot of the 2D toy dataset coloured by class label to visually verify the non-linear decision boundary.",
+      "why_important": "Provided matplotlib scatter plot code with distinct colours per class and axis labels."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_2_1.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}

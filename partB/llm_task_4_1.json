@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_4_1",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Generated a structured report with all required sections in markdown format.",
+      "prompt": "Draft a 4-page report for an MKL reproduction project covering: paper summary, reproduction setup/results, ablation findings, failure mode, and reflection.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Generated a structured report with all required sections in markdown format.",
+      "student_verification": "Edited for tone, added honest caveats, and ensured all claims are supported by notebook results.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Refined the paper summary section of the report.",
+      "prompt": "Summarise the key contributions of Gonen and Alpaydin (2011) in 3-4 sentences suitable for a technical report introduction.",
+      "how_it_helped": "Generated a concise summary covering the MKL taxonomy, the alternating optimisation framework, and the empirical evaluation across benchmark datasets.",
+      "student_verification": "Verified all cited contributions against the paper's abstract and conclusion sections."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Structured the reproduction methodology section.",
+      "prompt": "How should I structure the methodology section of the report to clearly explain my toy MKL reproduction setup?",
+      "how_it_helped": "Suggested subsections for: dataset description, kernel dictionary, optimisation procedure, evaluation metrics, and computational environment.",
+      "student_verification": "Reorganised the section to follow this structure and added specific parameter values."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Drafted the limitations and reflection section.",
+      "prompt": "Write a reflection paragraph discussing the limitations of reproducing MKL on a toy dataset compared to the paper's full-scale experiments.",
+      "how_it_helped": "Generated a thoughtful reflection covering scale differences, kernel dictionary size, and the gap between toy and benchmark performance.",
+      "student_verification": "Strengthened the honesty of the reflection and added concrete numbers from my experiments."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Formatted tables and figures for the report.",
+      "prompt": "Generate markdown tables comparing MKL accuracy with baseline SVM and ablation results, suitable for a technical report.",
+      "how_it_helped": "Provided formatted markdown tables with headers for method, accuracy, precision, recall, and F1-score.",
+      "student_verification": "Populated tables with actual numbers from notebook outputs and added captions."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Draft a 4-page report for an MKL reproduction project covering: paper summary, reproduction setup/results, ablation findings, failure mode, and reflection.",
+      "why_important": "Generated a structured report with all required sections in markdown format."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Summarise the key contributions of Gonen and Alpaydin (2011) in 3-4 sentences suitable for a technical report introduction.",
+      "why_important": "Generated a concise summary covering the MKL taxonomy, the alternating optimisation framework, and the empirical evaluation across benchmark datasets."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How should I structure the methodology section of the report to clearly explain my toy MKL reproduction setup?",
+      "why_important": "Suggested subsections for: dataset description, kernel dictionary, optimisation procedure, evaluation metrics, and computational environment."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "Write a reflection paragraph discussing the limitations of reproducing MKL on a toy dataset compared to the paper's full-scale experiments.",
+      "why_important": "Generated a thoughtful reflection covering scale differences, kernel dictionary size, and the gap between toy and benchmark performance."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "Generate markdown tables comparing MKL accuracy with baseline SVM and ablation results, suitable for a technical report.",
+      "why_important": "Provided formatted markdown tables with headers for method, accuracy, precision, recall, and F1-score."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_4_1.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}

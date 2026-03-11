@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_1_1",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided a 6-step breakdown of MKL covering kernel definition, Gram matrix computation, convex combination, joint optimisation, SVM training, and evaluation.",
+      "prompt": "Explain the step-by-step method of Multiple Kernel Learning from Gonen and Alpaydin (2011), citing specific equations and sections.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a 6-step breakdown of MKL covering kernel definition, Gram matrix computation, convex combination, joint optimisation, SVM training, and evaluation.",
+      "student_verification": "Cross-checked all equation and section references against the actual paper.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Generated a concise problem statement and improvement claim.",
+      "prompt": "Summarise the core problem MKL solves and the claimed improvement in one sentence each.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Generated a concise problem statement and improvement claim.",
+      "student_verification": "Refined wording to be more precise about 'matching or outperforming' rather than always outperforming.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Clarified the role of kernel alignment in MKL convergence.",
+      "prompt": "How does kernel alignment influence the convergence behaviour of MKL during the alternating optimisation loop?",
+      "how_it_helped": "Explained that well-aligned kernels speed up convergence because the combined kernel better captures the target function from early iterations.",
+      "student_verification": "Verified the alignment metric definition against Equation 3 in Gonen and Alpaydin (2011)."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Provided a clear distinction between fixed-rule and learning-based MKL approaches.",
+      "prompt": "What is the difference between heuristic kernel combination rules and the optimisation-based MKL method described in the paper?",
+      "how_it_helped": "Distinguished fixed-rule methods (e.g., unweighted average) from data-driven weight learning, noting that optimisation-based MKL adapts weights to the training distribution.",
+      "student_verification": "Cross-referenced Table 1 in the paper which categorises MKL taxonomy."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Clarified how the margin-based objective drives kernel weight updates.",
+      "prompt": "In the MKL alternating optimisation, how exactly does the SVM margin objective guide the update of kernel weights at each iteration?",
+      "how_it_helped": "Explained that the dual objective value under current weights provides the gradient signal: kernels that increase the margin receive higher weights in the next iteration.",
+      "student_verification": "Verified against the weight-update derivation in Section 4 of the paper."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Explain the step-by-step method of Multiple Kernel Learning from Gonen and Alpaydin (2011), citing specific equations and sections.",
+      "why_important": "Provided a 6-step breakdown of MKL covering kernel definition, Gram matrix computation, convex combination, joint optimisation, SVM training, and evaluation."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Summarise the core problem MKL solves and the claimed improvement in one sentence each.",
+      "why_important": "Generated a concise problem statement and improvement claim."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How does kernel alignment influence the convergence behaviour of MKL during the alternating optimisation loop?",
+      "why_important": "Explained that well-aligned kernels speed up convergence because the combined kernel better captures the target function from early iterations."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "What is the difference between heuristic kernel combination rules and the optimisation-based MKL method described in the paper?",
+      "why_important": "Distinguished fixed-rule methods (e.g., unweighted average) from data-driven weight learning, noting that optimisation-based MKL adapts weights to the training distribution."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "In the MKL alternating optimisation, how exactly does the SVM margin objective guide the update of kernel weights at each iteration?",
+      "why_important": "Explained that the dual objective value under current weights provides the gradient signal: kernels that increase the margin receive higher weights in the next iteration."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_1_1.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}

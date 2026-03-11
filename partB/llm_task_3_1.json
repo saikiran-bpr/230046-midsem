@@ -1,0 +1,117 @@
+{
+  "student_metadata": {
+    "name": "Sai Kiran Bompelliwar",
+    "roll_number": "230046",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B - task_3_1",
+    "submission_date": "2026-03-01"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Suggested single-kernel ablation and uniform/random weight ablation with comparison plots.",
+      "prompt": "Design two ablation experiments for MKL: one removing kernel diversity and one changing the weighting strategy.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested single-kernel ablation and uniform/random weight ablation with comparison plots.",
+      "student_verification": "Added 5-trial random weight ablation with Dirichlet sampling for statistical robustness. Wrote custom interpretations.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "purpose": "Provided matplotlib bar chart code with annotation.",
+      "prompt": "Generate comparison bar charts with error bars for the ablation results.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided matplotlib bar chart code with annotation.",
+      "student_verification": "Added std error bars for random weights and colour-coding.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Designed a sensitivity analysis for the SVM C parameter under MKL.",
+      "prompt": "How does varying the SVM regularisation parameter C affect the MKL kernel weights and classification accuracy?",
+      "how_it_helped": "Explained that large C overfits, small C underfits, and the optimal C balances margin width and training error; kernel weights shift accordingly.",
+      "student_verification": "Ran MKL with C in [0.01, 0.1, 1, 10, 100] and plotted accuracy and weight changes."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Explored statistical significance testing for ablation results.",
+      "prompt": "How can I test whether the accuracy difference between MKL and the ablation variants is statistically significant with a small test set?",
+      "how_it_helped": "Suggested McNemar's test for paired binary classifiers or bootstrap confidence intervals given the small sample size.",
+      "student_verification": "Implemented bootstrap CI with 1000 resamples and reported 95% confidence intervals."
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-01",
+      "tool_name": "Gemini",
+      "model": "Gemini",
+      "llm_response_used": "Yes",
+      "confidence_level": 5,
+      "purpose": "Investigated the impact of removing the worst-performing kernel.",
+      "prompt": "What happens to MKL performance if I remove the kernel that received the lowest weight in the learned combination?",
+      "how_it_helped": "Explained that removing a near-zero-weight kernel should have minimal impact, confirming MKL's implicit feature selection property under L1-norm.",
+      "student_verification": "Ran the experiment and confirmed accuracy dropped by less than 0.5% when the lowest-weight kernel was removed."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Design two ablation experiments for MKL: one removing kernel diversity and one changing the weighting strategy.",
+      "why_important": "Suggested single-kernel ablation and uniform/random weight ablation with comparison plots."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Generate comparison bar charts with error bars for the ablation results.",
+      "why_important": "Provided matplotlib bar chart code with annotation."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How does varying the SVM regularisation parameter C affect the MKL kernel weights and classification accuracy?",
+      "why_important": "Explained that large C overfits, small C underfits, and the optimal C balances margin width and training error; kernel weights shift accordingly."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "How can I test whether the accuracy difference between MKL and the ablation variants is statistically significant with a small test set?",
+      "why_important": "Suggested McNemar's test for paired binary classifiers or bootstrap confidence intervals given the small sample size."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "What happens to MKL performance if I remove the kernel that received the lowest weight in the learned combination?",
+      "why_important": "Explained that removing a near-zero-weight kernel should have minimal impact, confirming MKL's implicit feature selection property under L1-norm."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for task_3_1.",
+    "understanding_acknowledged": true,
+    "signature": "Sai Kiran Bompelliwar",
+    "date": "2026-03-01"
+  }
+}
